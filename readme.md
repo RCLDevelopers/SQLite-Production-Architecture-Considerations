@@ -36,7 +36,7 @@ SQLite uses file-level locking. High-traffic periods (e.g., enrollment deadlines
 ### 3. Security & Scaling
 
 * **File Permissions:** Ensure the database file is restricted (e.g., `chmod 664`) so it is not accessible to unauthorized system users.
-* **Scaling Limit:** This system is designed to **Scale Up** (more powerful CPU/RAM). If your driving school requires a multi-server load-balanced setup (**Scaling Out**), a migration to MySQL/PostgreSQL is required.
+* **Scaling Limit:** This system is designed to **Scale Up** (more powerful CPU/RAM). If your school requires a multi-server load-balanced setup (**Scaling Out**), a migration to MySQL/PostgreSQL is required.
 
 
 ## 📊 Feature Comparison: SQLite vs. MySQL
@@ -52,7 +52,7 @@ SQLite uses file-level locking. High-traffic periods (e.g., enrollment deadlines
 
 ## 🛠 Modules Included
 
-* **Course Management:** Schedule and manage driving lessons.
+* **Course Management:** Schedule and manage lessons.
 * **Enrollment System:** Student registration and onboarding.
 * **Payment Processing:** Integrated transactional handling.
 * **User Management:** Role-based access for instructors and students.
