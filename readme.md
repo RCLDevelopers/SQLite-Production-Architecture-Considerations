@@ -65,6 +65,17 @@ As modules like Support Tickets and Course Management grow, you may hit a "scali
 
 * **The Challenge:** SQLite is a "Scale Up" solution. If you move to a multi-server load-balanced setup, Server A will not see updates made on Server B because the database is a local file.
 
+## 📊 Feature Comparison
+
+| Feature | SQLite (Current) | MySQL/PostgreSQL (Standard) |
+| --- | --- | --- |
+| **Setup** | Zero configuration | Requires installation/setup |
+| **Enrollment** | Fine for low volume | Better for "Rush" periods |
+| **Payments** | Risk of locks during high traffic | Row-level locking (No waiting) |
+| **Tickets** | Great for simple text storage | Better for large attachments |
+| **Backups** | Copy the file (Easy) | Requires `mysqldump` (Pro) |
+
+
 ## 📝 Created by CTO
 [Zangtics Digital](https://zangticsdigital.com/).
 
